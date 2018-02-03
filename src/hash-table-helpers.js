@@ -6,7 +6,13 @@ class LimitedArray {
     this.storage = [];
     this.limit = limit;
   }
-
+class LinkedList {
+  constructor(limit){
+    this.head = null;
+    this.tail = null;
+    this.size = 0;
+  }
+}
   checkLimit(index) {
     if (typeof index !== 'number') throw new Error('The supplied index needs to be a number');
     if (this.limit <= index) {
